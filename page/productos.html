@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE html> 
 <html lang="es">
 <head>
     <meta charset="UTF-8">
@@ -7,47 +7,98 @@
 <body bgcolor="#F4F6F9">
 
     <!-- ENCABEZADO -->
-    <table width="100%" bgcolor="#0277BD" cellpadding="20">
-        <tr>
-            <td align="center">
-                <font face="Verdana" color="white" size="6"><b>📦 Productos</b></font><br>
-                <font face="Arial" color="#BBDEFB" size="3">Explora lo mejor en tecnología</font>
-            </td>
-        </tr>
-    </table>
+    <header>
+        <table width="100%" bgcolor="#0277BD" cellpadding="20">
+            <tr>
+                <td align="center">
+                    <font face="Verdana" color="white" size="6"><b>📦 Productos</b></font><br>
+                    <font face="Arial" color="#BBDEFB" size="3">Explora lo mejor en tecnología</font>
+                </td>
+            </tr>
+        </table>
+    </header>
 
-    <!-- SUBCATEGORÍAS -->
-    <table width="100%" cellpadding="18" cellspacing="10" align="center">
-        <tr align="center">
-            <td bgcolor="#E1F5FE">
-                <a href="productos/celulares.html">
-                    <font face="Arial" color="#01579B" size="4"><b>📱 Celulares</b></font><br>
-                    <font face="Arial" color="#333" size="3">Modelos innovadores al mejor precio.</font>
-                </a>
-            </td>
-            <td bgcolor="#E1F5FE">
-                <a href="productos/accesorios.html">
-                    <font face="Arial" color="#01579B" size="4"><b>🎧 Accesorios</b></font><br>
-                    <font face="Arial" color="#333" size="3">Audífonos, cargadores y más.</font>
-                </a>
-            </td>
-        </tr>
-    </table>
+    <!-- CONTENIDO PRINCIPAL -->
+    <main>
+        <!-- SUBCATEGORÍAS -->
+        <table width="100%" cellpadding="18" cellspacing="10" align="center">
+            <tr align="center">
+                <td bgcolor="#E1F5FE">
+                    <a href="productos/celulares.html" style="text-decoration:none;">
+                        <font face="Arial" color="#01579B" size="4"><b>📱 Celulares</b></font><br>
+                        <font face="Arial" color="#333" size="3">Modelos innovadores al mejor precio.</font>
+                    </a>
+                </td>
+                <td bgcolor="#E1F5FE">
+                    <a href="productos/accesorios.html" style="text-decoration:none;">
+                        <font face="Arial" color="#01579B" size="4"><b>🎧 Accesorios</b></font><br>
+                        <font face="Arial" color="#333" size="3">Audífonos, cargadores y más.</font>
+                    </a>
+                </td>
+            </tr>
+        </table>
 
-    <!-- BOTÓN INICIO -->
-    <table width="100%" align="center" cellpadding="20">
-        <tr>
-            <td align="center">
-                <a href="../index.html">
-                    <table bgcolor="#0288D1" cellpadding="15">
-                        <tr>
-                            <td><font face="Verdana" color="white" size="4"><b>⬅️ Regresar al Inicio</b></font></td>
-                        </tr>
-                    </table>
-                </a>
-            </td>
-        </tr>
-    </table>
+        <!-- BOTÓN INICIO CON EFECTO -->
+        <div style="text-align:center; margin:30px 0;">
+            <a href="../index.html">
+                <font face="Verdana" color="white" size="4"><b>⬅️ Regresar al Inicio</b></font>
+            </a>
+        </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <table width="100%" bgcolor="#0277BD" cellpadding="20" cellspacing="0">
+            <tr valign="top">
+                <!-- Contacto -->
+                <td width="33%">
+                    <font face="Arial" color="white" size="4"><b>📞 Contacto</b></font><br><br>
+                    <font face="Arial" color="#E1F5FE" size="2">
+                        🏠 Lima, Perú<br><br>
+                        📱 +51 987 654 321<br><br>
+                        ✉️ thomas.store@gmail.com
+                    </font>
+                </td>
+
+                <!-- Redes sociales -->
+                <td width="33%">
+                    <font face="Arial" color="white" size="4"><b>🌐 Redes Sociales</b></font><br><br>
+                    <font face="Arial" color="#E1F5FE" size="2">
+                        <img src="../dist/imagenes/iconos/wsp.png" alt="Whatsapp" style="width: 25px; height: 25px; vertical-align: middle;"> WhatsApp<br><br>
+                        <img src="../dist/imagenes/iconos/fb.png" alt="Facebook" style="width: 20px; height: 20px; vertical-align: middle;"> Facebook<br><br>
+                        <img src="../dist/imagenes/iconos/ig.png" alt="Instagram" style="width: 20px; height: 20px; vertical-align: middle;"> Instagram<br><br>
+                        <img src="../dist/imagenes/iconos/ytb.png" alt="YouTube" style="width: 20px; height: 20px; vertical-align: middle;"> YouTube
+                    </font>
+                </td>
+
+                <!-- Suscripción -->
+                <td width="33%">
+                    <section>
+                        <font face="Arial" color="white" size="4"><b>✉️ Suscríbete</b></font><br><br>
+                        <form>
+                            <input type="email" name="correo" placeholder="Tu correo electrónico" 
+                                style="padding:8px; width:90%; border:none; border-radius:8px;"><br><br>
+                            <button type="submit" 
+                                style="background-color:#01579B; color:white; padding:10px 20px; border:none; border-radius:8px; cursor:pointer;">
+                                Suscribirme
+                            </button>
+                        </form>
+                    </section>
+                </td>
+            </tr>
+        </table>
+
+        <!-- Derechos reservados -->
+        <table width="100%" bgcolor="#01579B" cellpadding="10" cellspacing="0">
+            <tr>
+                <td align="center">
+                    <font face="Arial" color="white" size="2">
+                        © 2025 <b>Thomas Store</b> | Privacidad | Términos y Condiciones
+                    </font>
+                </td>
+            </tr>
+        </table>
+    </footer>
 
 </body>
 </html>
