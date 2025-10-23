@@ -1,0 +1,170 @@
+/* 🎨 Paleta de colores */
+:root {
+  --azul-primario: #0277bd;
+  --azul-oscuro: #01579b;
+  --celeste: #03a9f4;
+}
+
+/* 🌐 Transiciones y scroll suave */
+body {
+  transition: background-color 0.4s ease, color 0.4s ease;
+  scroll-behavior: smooth;
+}
+
+/* 🧩 Tarjetas (Productos / Servicios) */
+.card {
+  background: transparent;
+  border: none;
+  border-radius: 1rem;
+  box-shadow: 0 4px 12px rgba(2, 119, 189, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 18px rgba(2, 119, 189, 0.25);
+}
+
+/* Enlaces dentro de las tarjetas */
+.card a {
+  color: #ffffff;
+  text-decoration: none;
+  transition: background-color 0.3s ease, opacity 0.3s ease;
+  padding: 0.25rem 0.4rem;
+  border-radius: 0.3rem;
+}
+.card a:hover,
+.card a:active {
+  background-color: rgba(0, 0, 0, 0.15);
+  opacity: 0.9;
+}
+
+/* 🏷️ Encabezado */
+header h1 {
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.15);
+}
+header p.lead {
+  font-weight: 500;
+}
+
+/* 🔗 Enlaces dentro del header */
+header a {
+  color: var(--azul-oscuro);
+  text-decoration: none;
+  transition: color 0.3s ease, background-color 0.3s ease, opacity 0.3s ease;
+  padding: 0.25rem 0.4rem;
+  border-radius: 0.3rem;
+}
+header a:hover,
+header a:active {
+  color: #ffffff;
+  background-color: rgba(2, 119, 189, 0.2);
+  opacity: 0.9;
+}
+
+/* 🦶 Footer */
+footer {
+  background: linear-gradient(180deg, var(--azul-primario), var(--azul-oscuro));
+  border-top: 4px solid var(--celeste);
+}
+footer h5 {
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* 🔗 Enlaces del footer */
+footer a {
+  color: #e1f5fe;
+  transition: color 0.3s ease, opacity 0.3s ease, background-color 0.3s ease;
+  padding: 0.25rem 0.4rem;
+  border-radius: 0.3rem;
+}
+footer a:hover,
+footer a:active {
+  color: #ffffff;
+  opacity: 0.95;
+  background-color: rgba(0, 0, 0, 0.15);
+}
+footer a,
+footer a:hover,
+footer a:focus,
+footer a:visited {
+  text-decoration: none !important;
+}
+
+/* 📞 Sección de contacto */
+footer address {
+  line-height: 1.8;
+  font-style: normal;
+}
+
+/* 🌐 Redes sociales */
+footer ul li {
+  margin-bottom: 0.75rem;
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+footer ul li i {
+  font-size: 1.2rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* 🧮 Inputs y botones */
+input,
+button {
+  border-radius: 0.5rem;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* ✉️ Efecto hover y clic en botones */
+button.btn-light:hover,
+button:hover {
+  background-color: #0277bd;
+  color: #ffffff;
+  transform: translateY(-1px);
+}
+button:active {
+  transform: scale(0.98); /* 🔹 efecto de “presión” */
+  background-color: #01579b;
+  color: #ffffff;
+}
+
+/* 🌊 Barra de navegación */
+.navbar-nav .nav-link {
+  transition: background-color 0.3s ease, opacity 0.3s ease;
+  border-radius: 0.3rem;
+  padding: 0.5rem 0.8rem;
+}
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link:active {
+  background-color: rgba(0, 0, 0, 0.15);
+  opacity: 0.9;
+}
+
+/* 📱 Ajustes responsive */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 1.8rem;
+  }
+  .card {
+    margin-bottom: 1rem;
+  }
+}
+
+/* === Cards de celulares === */
+.product-img {
+  height: 220px;
+  object-fit: contain;
+  padding: 10px;
+}
+
+.card-body h6 {
+  font-size: 1rem;
+}
+
+.card-body p {
+  font-size: 0.9rem;
+}

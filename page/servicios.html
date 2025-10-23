@@ -1,144 +1,139 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <title>Servicios - Thomas Store</title>
+  <meta charset="UTF-8">
+  <title>Servicios - Thomas Store</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="../dist/css/style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
 </head>
-<body bgcolor="#F4F6F9">
 
-    <header>
-        <table width="100%" bgcolor="#0277BD" cellpadding="20">
-            <tr>
-                <td align="center">
-                    <font face="Verdana" color="white" size="6"><b>⚙️ Servicios</b></font><br>
-                    <font face="Arial" color="#BBDEFB" size="3">Soporte rápido y confiable</font>
-                </td>
-            </tr>
-        </table>
-    </header>
+<body class="bg-light">
 
-    <main>
-        <section>
-        <table width="100%" cellpadding="18" cellspacing="10" align="center">
-            <tr align="center">
-                <!-- Técnicos -->
-                <td bgcolor="#E3F2FD" valign="top">
-                    <a href="servicios/tecnicos.html" style="text-decoration:none;">
-                        <font face="Arial" color="#01579B" size="4"><b>🔧 Técnicos</b></font><br>
-                        <font face="Arial" color="#333" size="3">Reparación y mantenimiento rápido.</font>
-                    </a>
-                    <br><br>
-                    <table width="90%" bgcolor="white" cellpadding="15" cellspacing="0" border="2" bordercolor="#0288D1" align="center" style="border-radius:20px;">
-                        <tr>
-                            <td>
-                                <font face="Arial" color="#333" size="3">
-                                    Nuestro equipo de técnicos especializados ofrece reparación y mantenimiento rápido para todo tipo de dispositivo móvil. 
-                                    Contamos con experiencia en celulares asegurando un diagnóstico preciso y soluciones efectivas.<br><br>
-                                    
-                                    Garantizamos atención personalizada, uso de repuestos de alta calidad y asesoramiento profesional para que tus equipos funcionen siempre al máximo rendimiento.  
-                                    Con nuestro servicio, no tendrás que preocuparte por fallas técnicas, tiempos de espera prolongados o complicaciones innecesarias.
-                                </font>
-                            </td>
-                        </tr>
-                    </table>
-                </td>
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary py-3">
+    <div class="container">
+      <a class="navbar-brand fs-2 fw-bold" href="../index.html">🛒 Thomas Store</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-                <td bgcolor="#E3F2FD" valign="top">
-                    <a href="servicios/delivery.html" style="text-decoration:none;">
-                        <font face="Arial" color="#01579B" size="4"><b>🚚 Delivery</b></font><br>
-                        <font face="Arial" color="#333" size="3">Entrega segura hasta tu puerta.</font>
-                    </a>
-                    <br><br>
-                    <table width="90%" bgcolor="white" cellpadding="15" cellspacing="0" border="2" bordercolor="#0288D1" align="center" style="border-radius:20px;">
-                        <tr>
-                            <td>
-                                <font face="Arial" color="#333" size="3">
-                                    Nuestro servicio de delivery asegura que tus productos lleguen de manera rápida, segura y confiable directamente a tu hogar u oficina.  
-                                    Hacemos seguimiento de cada envío para que tengas control total sobre tu pedido y recibas notificaciones oportunas.<br><br>
-                                    
-                                    Además, ofrecemos opciones de entrega flexible y atención personalizada para cualquier consulta o requerimiento especial, garantizando una experiencia cómoda y sin complicaciones.  
-                                    Tu satisfacción y seguridad son nuestra prioridad.
-                                </font>
-                            </td>
-                        </tr>
-                    </table>
-                </td>
-            </tr>
-        </table>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav me-3">
+          <li class="nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="productos.html">Productos</a></li>
+          <li class="nav-item"><a class="nav-link active" href="servicios.html">Servicios</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- 🔹 Encabezado -->
+  <header class="text-center py-5 bg-info-subtle">
+    <div class="container">
+      <h1 class="fw-bold text-primary display-5">⚙️ Servicios</h1>
+      <p class="lead text-secondary">Soporte rápido y confiable</p>
+      <hr class="w-50 mx-auto border-primary border-3 opacity-50">
+    </div>
+  </header>
+
+  <!-- 🔹 Sección de Servicios -->
+  <main class="container py-5">
+    <div class="row g-4">
+      <!-- Técnicos -->
+      <div class="col-md-6">
+        <div class="card h-100 shadow-sm p-3 text-center">
+          <div class="card-body">
+            <h5 class="card-title text-primary fw-bold mb-3">🔧 Técnicos</h5>
+            <p class="card-text text-dark">
+              Nuestro equipo de técnicos especializados ofrece reparación y mantenimiento rápido para todo tipo de dispositivo móvil.
+              Contamos con experiencia en celulares, asegurando un diagnóstico preciso y soluciones efectivas.
+            </p>
+            <p class="text-secondary small">
+              Atención personalizada, repuestos originales y asesoramiento profesional para mantener tus equipos al máximo rendimiento.
+            </p>
+            <a href="https://wa.me/51987654321" 
+               target="_blank" 
+               class="btn btn-primary mt-3">
+              <i class="bi bi-whatsapp"></i> Contactar
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Delivery -->
+      <div class="col-md-6">
+        <div class="card h-100 shadow-sm p-3 text-center">
+          <div class="card-body">
+            <h5 class="card-title text-primary fw-bold mb-3">🚚 Delivery</h5>
+            <p class="card-text text-dark">
+              Nuestro servicio de delivery asegura entregas rápidas, seguras y confiables directamente a tu hogar u oficina.
+              Realizamos seguimiento de cada pedido para tu total tranquilidad.
+            </p>
+            <p class="text-secondary small">
+              Opciones flexibles, atención personalizada y soporte continuo para una experiencia sin complicaciones.
+            </p>
+            <a href="https://wa.me/51987654321" 
+               target="_blank" 
+               class="btn btn-primary mt-3">
+              <i class="bi bi-whatsapp"></i> Contactar
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 🔹 Botón Regresar -->
+    <div class="text-center mt-5">
+      <a href="../index.html" class="btn btn-primary px-4 py-2">
+        ⬅️ Regresar al Inicio
+      </a>
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="bg-primary text-white mt-5">
+    <section class="container py-4">
+      <div class="row">
+        <!-- Contacto -->
+        <section class="col-md-4 mb-4 mb-md-0">
+          <h5>📞 Contacto</h5>
+          <address class="text-light small">
+            🏠 Lima, Perú<br>
+            📱 +51 987 654 321<br>
+            ✉️ <a href="mailto:thomas.store@gmail.com" class="text-white text-decoration-none">thomas.store@gmail.com</a>
+          </address>
         </section>
 
-        <nav align="center" cellpadding="0" cellspacing="0" style="margin-top:40px; margin-bottom:40px;">
-            <table bgcolor="#0288D1" border="0" cellpadding="10" cellspacing="0" align="center">
-                <tr>
-                    <td align="center">
-                        <a href="../index.html" style="text-decoration:none;">
-                            <font face="Verdana" color="white" size="4"><b>⬅️ Regresar al Inicio</b></font>
-                        </a>
-                    </td>
-                </tr>
-            </table>
-        </nav>
-    </main>
+        <!-- Redes Sociales -->
+        <section class="col-md-4 mb-4 mb-md-0">
+          <h5>🌐 Redes Sociales</h5>
+          <ul class="list-unstyled small">
+            <li><a href="https://wa.me/51987654321" class="text-white text-decoration-none"><i class="bi bi-whatsapp"></i> WhatsApp</a></li>
+            <li><a href="https://www.facebook.com/" class="text-white text-decoration-none"><i class="bi bi-facebook"></i> Facebook</a></li>
+            <li><a href="https://www.instagram.com/" class="text-white text-decoration-none"><i class="bi bi-instagram"></i> Instagram</a></li>
+            <li><a href="https://www.youtube.com/" class="text-white text-decoration-none"><i class="bi bi-youtube"></i> YouTube</a></li>
+          </ul>
+        </section>
 
-    <footer>
-        <table width="100%" bgcolor="#0277BD" cellpadding="20" cellspacing="0">
-            <tr valign="top">
-                <!-- Contacto -->
-                <td width="33%">
-                    <font face="Arial" color="white" size="4"><b>📞 Contacto</b></font><br><br>
-                    <font face="Arial" color="#E1F5FE" size="2">
-                        🏠 Lima, Perú<br><br>
-                        📱 +51 987 654 321<br><br>
-                        ✉️ <a href="mailto:thomas.store@gmail.com" style="color:#E1F5FE; text-decoration:none;">thomas.store@gmail.com</a>
-                    </font>
-                </td>
+        <!-- Suscripción -->
+        <section class="col-md-4">
+          <h5>✉️ Suscríbete</h5>
+          <form>
+            <label for="email" class="visually-hidden">Correo electrónico</label>
+            <input type="email" id="email" class="form-control mb-2" placeholder="Tu correo electrónico" required>
+            <button class="btn btn-light w-100" type="submit">Suscribirme</button>
+          </form>
+        </section>
+      </div>
+    </section>
 
-                <!-- Redes sociales -->
-                <td width="33%">
-                    <font face="Arial" color="white" size="4"><b>🌐 Redes Sociales</b></font><br><br>
-                    <font face="Arial" color="#E1F5FE" size="2">
-                        <a href="https://wa.me/51987654321" style="color:#E1F5FE; text-decoration:none;">
-                            <img src="../dist/imagenes/iconos/wsp.png" alt="Whatsapp" width="25" height="25" align="middle"> WhatsApp
-                        </a><br><br>
+    <section class="bg-dark text-center py-2 small">
+      © 2025 <b>Thomas Store</b> | Privacidad | Términos y Condiciones
+    </section>
+  </footer>
 
-                        <a href="https://www.facebook.com/" style="color:#E1F5FE; text-decoration:none;">
-                            <img src="../dist/imagenes/iconos/fb.png" alt="Facebook" width="25" height="25" align="middle"> Facebook
-                        </a><br><br>
-
-                        <a href="https://www.instagram.com/" style="color:#E1F5FE; text-decoration:none;">
-                            <img src="../dist/imagenes/iconos/ig.png" alt="Instagram" width="25" height="25" align="middle"> Instagram
-                        </a><br><br>
-
-                        <a href="https://www.youtube.com/" style="color:#E1F5FE; text-decoration:none;">
-                            <img src="../dist/imagenes/iconos/ytb.png" alt="YouTube" width="25" height="25" align="middle"> YouTube
-                        </a>
-                    </font>
-                </td>
-
-                <!-- Suscripción -->
-                <td width="33%">
-                    <section>
-                        <font face="Arial" color="white" size="4"><b>✉️ Suscríbete</b></font><br><br>
-                        <form>
-                            <input type="email" name="correo" placeholder="Tu correo electrónico"><br><br>
-                            <input type="submit" value="Suscribirme">
-                        </form>
-                    </section>
-                </td>
-            </tr>
-        </table>
-
-        <!-- Derechos reservados -->
-        <table width="100%" bgcolor="#01579B" cellpadding="10" cellspacing="0">
-            <tr>
-                <td align="center">
-                    <font face="Arial" color="white" size="2">
-                        © 2025 <b>Thomas Store</b> | Privacidad | Términos y Condiciones
-                    </font>
-                </td>
-            </tr>
-        </table>
-    </footer>
-
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
+

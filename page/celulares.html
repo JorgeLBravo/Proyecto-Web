@@ -1,136 +1,177 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <title>Celulares - Thomas Store</title>
+  <meta charset="UTF-8">
+  <title>Celulares - Thomas Store</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="../dist/css/style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
 </head>
-<body bgcolor="#F4F6F9">
 
-    <header>
-        <table width="100%" bgcolor="#0277BD" cellpadding="20">
-            <tr>
-                <td align="center">
-                    <font face="Verdana" color="white" size="6"><b>📱 Celulares</b></font><br>
-                    <font face="Arial" color="#BBDEFB" size="3">Encuentra tu equipo ideal</font>
-                </td>
-            </tr>
-        </table>
+<body class="bg-light">
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary py-3">
+    <div class="container">
+      <a class="navbar-brand fs-2 fw-bold" href="../index.html">🛒 Thomas Store</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav me-3">
+          <li class="nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link active" href="productos.html">Productos</a></li>
+          <li class="nav-item"><a class="nav-link" href="servicios.html">Servicios</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- 🔹 Encabezado -->
+    <header class="text-center py-5 bg-info-subtle">
+        <div class="container">
+        <h1 class="fw-bold text-primary display-5">📱 Celulares</h1>
+        <p class="lead text-secondary">Encuentra tu equipo ideal</p>
+        <hr class="w-50 mx-auto border-primary border-3">
+        </div>
     </header>
 
-    <main>
-        <section>
-            <table width="90%" align="center" cellpadding="20" cellspacing="20">
-                <tr align="center">
-                    <td bgcolor="white" border="1">
-                        <img src="../dist/imagenes/celulares/iphone14.jpg" alt="iPhone 14 Pro" width="200"><br><br>
-                        <font face="Arial" size="4" color="#01579B"><b>iPhone 14 Pro</b></font><br>
-                        <font face="Arial" size="3" color="#333">$1,200</font>
-                    </td>
-                    <td bgcolor="white">
-                        <img src="../dist/imagenes/celulares/galaxys22.jpg" alt="Samsung Galaxy S22" width="200"><br><br>
-                        <font face="Arial" size="4" color="#01579B"><b>Samsung Galaxy S22</b></font><br>
-                        <font face="Arial" size="3" color="#333">850</font>
-                    </td>
-                    <td bgcolor="white">
-                        <img src="../dist/imagenes/celulares/xiaomi13.jpg" alt="Xiaomi 13 Pro" width="200"><br><br>
-                        <font face="Arial" size="4" color="#01579B"><b>Xiaomi 13 Pro</b></font><br>
-                        <font face="Arial" size="3" color="#333">$850</font>
-                    </td>
-                </tr>
-                <tr align="center">
-                    <td bgcolor="white">
-                        <img src="../dist/imagenes/celulares/motorola.jpg" alt="Motorola Edge 40" width="200"><br><br>
-                        <font face="Arial" size="4" color="#01579B"><b>Motorola Edge 40</b></font><br>
-                        <font face="Arial" size="3" color="#333">$620</font>
-                    </td>
-                    <td bgcolor="white">
-                        <img src="../dist/imagenes/celulares/galaxys24.jpg" alt="Samsung Galaxy S24" width="200"><br><br>
-                        <font face="Arial" size="4" color="#01579B"><b>Samsung Galaxy S24</b></font><br>
-                        <font face="Arial" size="3" color="#333">$1550</font>
-                    </td>
-                    <td bgcolor="white">
-                        <img src="../dist/imagenes/celulares/oneplus11.jpg" alt="OnePlus 11" width="200"><br><br>
-                        <font face="Arial" size="4" color="#01579B"><b>OnePlus 11</b></font><br>
-                        <font face="Arial" size="3" color="#333">$780</font>
-                    </td>
-                </tr>
-            </table>
+
+  <!-- 🔹 Sección de productos -->
+  <main class="container py-5">
+    <div class="row g-4">
+      <!-- iPhone 14 -->
+      <div class="col-6 col-md-4 col-lg-3">
+        <div class="card text-center h-100 shadow-sm">
+          <img src="../dist/imagenes/celulares/iphone14.jpg" class="card-img-top" alt="iPhone 14 Pro">
+          <div class="card-body py-3">
+            <h6 class="card-title text-primary fw-bold mb-1">iPhone 14 Pro</h6>
+            <p class="card-text text-dark mb-1">$1,200</p>
+            <p class="text-success small mb-1"><i class="bi bi-check-circle"></i> En stock</p>
+            <button class="btn btn-primary btn-sm mt-2"><i class="bi bi-cart"></i> Comprar</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Galaxy S22 -->
+      <div class="col-6 col-md-4 col-lg-3">
+        <div class="card text-center h-100 shadow-sm">
+          <img src="../dist/imagenes/celulares/galaxys22.jpg" class="card-img-top" alt="Samsung Galaxy S22">
+          <div class="card-body py-3">
+            <h6 class="card-title text-primary fw-bold mb-1">Samsung Galaxy S22</h6>
+            <p class="card-text text-dark mb-1">$850</p>
+            <p class="text-success small mb-1"><i class="bi bi-check-circle"></i> En stock</p>
+            <button class="btn btn-primary btn-sm mt-2"><i class="bi bi-cart"></i> Comprar</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Xiaomi 13 Pro -->
+      <div class="col-6 col-md-4 col-lg-3">
+        <div class="card text-center h-100 shadow-sm">
+          <img src="../dist/imagenes/celulares/xiaomi13.jpg" class="card-img-top" alt="Xiaomi 13 Pro">
+          <div class="card-body py-3">
+            <h6 class="card-title text-primary fw-bold mb-1">Xiaomi 13 Pro</h6>
+            <p class="card-text text-dark mb-1">$850</p>
+            <p class="text-success small mb-1"><i class="bi bi-check-circle"></i> En stock</p>
+            <button class="btn btn-primary btn-sm mt-2"><i class="bi bi-cart"></i> Comprar</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Motorola Edge 40 -->
+      <div class="col-6 col-md-4 col-lg-3">
+        <div class="card text-center h-100 shadow-sm">
+          <img src="../dist/imagenes/celulares/motorola.jpg" class="card-img-top" alt="Motorola Edge 40">
+          <div class="card-body py-3">
+            <h6 class="card-title text-primary fw-bold mb-1">Motorola Edge 40</h6>
+            <p class="card-text text-dark mb-1">$620</p>
+            <p class="text-success small mb-1"><i class="bi bi-check-circle"></i> En stock</p>
+            <button class="btn btn-primary btn-sm mt-2"><i class="bi bi-cart"></i> Comprar</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Galaxy S24 -->
+      <div class="col-6 col-md-4 col-lg-3">
+        <div class="card text-center h-100 shadow-sm">
+          <img src="../dist/imagenes/celulares/galaxys24.jpg" class="card-img-top" alt="Samsung Galaxy S24">
+          <div class="card-body py-3">
+            <h6 class="card-title text-primary fw-bold mb-1">Samsung Galaxy S24</h6>
+            <p class="card-text text-dark mb-1">$1,550</p>
+            <p class="text-success small mb-1"><i class="bi bi-check-circle"></i> En stock</p>
+            <button class="btn btn-primary btn-sm mt-2"><i class="bi bi-cart"></i> Comprar</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- OnePlus 11 -->
+      <div class="col-6 col-md-4 col-lg-3">
+        <div class="card text-center h-100 shadow-sm">
+          <img src="../dist/imagenes/celulares/oneplus11.jpg" class="card-img-top" alt="OnePlus 11">
+          <div class="card-body py-3">
+            <h6 class="card-title text-primary fw-bold mb-1">OnePlus 11</h6>
+            <p class="card-text text-dark mb-1">$780</p>
+            <p class="text-success small mb-1"><i class="bi bi-check-circle"></i> En stock</p>
+            <button class="btn btn-primary btn-sm mt-2"><i class="bi bi-cart"></i> Comprar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 🔹 Botón Volver -->
+    <div class="text-center mt-5">
+        <a href="../page/productos.html" class="btn btn-primary px-4 py-2">
+            ⬅️ Volver a Productos
+        </a>
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="bg-primary text-white mt-5">
+    <section class="container py-4">
+      <div class="row">
+        <!-- Contacto -->
+        <section class="col-md-4 mb-4 mb-md-0">
+          <h5>📞 Contacto</h5>
+          <address class="text-light small">
+            🏠 Lima, Perú<br>
+            📱 +51 987 654 321<br>
+            ✉️ <a href="mailto:thomas.store@gmail.com" class="text-white text-decoration-none">thomas.store@gmail.com</a>
+          </address>
         </section>
 
-        <!-- BOTÓN VOLVER -->
-        <nav align="center" style="margin-top:40px; margin-bottom:40px;">
-            <table bgcolor="#0288D1" border="0" cellpadding="10" cellspacing="0" align="center">
-                <tr>
-                    <td align="center">
-                        <a href="../page/productos.html" style="text-decoration:none;">
-                            <font face="Verdana" color="white" size="4"><b>⬅️ Volver a Productos</b></font>
-                        </a>
-                    </td>
-                </tr>
-            </table>
-        </nav>
-    </main>
+        <!-- Redes Sociales -->
+        <section class="col-md-4 mb-4 mb-md-0">
+          <h5>🌐 Redes Sociales</h5>
+          <ul class="list-unstyled small">
+            <li><a href="https://wa.me/51987654321" class="text-white text-decoration-none"><i class="bi bi-whatsapp"></i> WhatsApp</a></li>
+            <li><a href="https://www.facebook.com/" class="text-white text-decoration-none"><i class="bi bi-facebook"></i> Facebook</a></li>
+            <li><a href="https://www.instagram.com/" class="text-white text-decoration-none"><i class="bi bi-instagram"></i> Instagram</a></li>
+            <li><a href="https://www.youtube.com/" class="text-white text-decoration-none"><i class="bi bi-youtube"></i> YouTube</a></li>
+          </ul>
+        </section>
 
-    <footer>
-        <table width="100%" bgcolor="#0277BD" cellpadding="20" cellspacing="0">
-            <tr valign="top">
-                <!-- Contacto -->
-                <td width="33%">
-                    <font face="Arial" color="white" size="4"><b>📞 Contacto</b></font><br><br>
-                    <font face="Arial" color="#E1F5FE" size="2">
-                        🏠 Lima, Perú<br><br>
-                        📱 +51 987 654 321<br><br>
-                        ✉️ <a href="mailto:thomas.store@gmail.com" style="color:#E1F5FE; text-decoration:none;">thomas.store@gmail.com</a>
-                    </font>
-                </td>
+        <!-- Suscripción -->
+        <section class="col-md-4">
+          <h5>✉️ Suscríbete</h5>
+          <form>
+            <label for="email" class="visually-hidden">Correo electrónico</label>
+            <input type="email" id="email" class="form-control mb-2" placeholder="Tu correo electrónico" required>
+            <button class="btn btn-light w-100" type="submit">Suscribirme</button>
+          </form>
+        </section>
+      </div>
+    </section>
 
-                <!-- Redes sociales -->
-                <td width="33%">
-                    <font face="Arial" color="white" size="4"><b>🌐 Redes Sociales</b></font><br><br>
+    <section class="bg-dark text-center py-2 small">
+      © 2025 <b>Thomas Store</b> | Privacidad | Términos y Condiciones
+    </section>
+  </footer>
 
-                    <font face="Arial" color="#E1F5FE" size="2">
-                        <a href="https://wa.me/51987654321" style="color:#E1F5FE; text-decoration:none;">
-                            <img src="../dist/imagenes/iconos/wsp.png" alt="Whatsapp" width="25" height="25" align="middle"> WhatsApp
-                        </a><br><br>
-
-                        <a href="https://www.facebook.com/" style="color:#E1F5FE; text-decoration:none;">
-                            <img src="../dist/imagenes/iconos/fb.png" alt="Facebook" width="25" height="25" align="middle"> Facebook
-                        </a><br><br>
-
-                        <a href="https://www.instagram.com/" style="color:#E1F5FE; text-decoration:none;">
-                            <img src="../dist/imagenes/iconos/ig.png" alt="Instagram" width="25" height="25" align="middle"> Instagram
-                        </a><br><br>
-
-                        <a href="https://www.youtube.com/" style="color:#E1F5FE; text-decoration:none;">
-                            <img src="../dist/imagenes/iconos/ytb.png" alt="YouTube" width="25" height="25" align="middle"> YouTube
-                        </a>
-                    </font>
-                </td>
-
-                <!-- Suscripción -->
-                <td width="33%">
-                    <section>
-                        <font face="Arial" color="white" size="4"><b>✉️ Suscríbete</b></font><br><br>
-                        <form>
-                            <input type="email" name="correo" placeholder="Tu correo electrónico"><br><br>
-                            <input type="submit" value="Suscribirme">
-                        </form>
-                    </section>
-                </td>
-            </tr>
-        </table>
-
-        <!-- Derechos reservados -->
-        <table width="100%" bgcolor="#01579B" cellpadding="10" cellspacing="0">
-            <tr>
-                <td align="center">
-                    <font face="Arial" color="white" size="2">
-                        © 2025 <b>Thomas Store</b> | Privacidad | Términos y Condiciones
-                    </font>
-                </td>
-            </tr>
-        </table>
-    </footer>
-
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
+
+

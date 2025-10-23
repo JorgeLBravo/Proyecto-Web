@@ -1,160 +1,117 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <title>Thomas Store</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thomas Store</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="dist/css/style.css">
 </head>
-<body bgcolor="#E3F2FD">
 
-    <header>
-        <table width="100%" bgcolor="#0277BD" cellpadding="25" cellspacing="0">
-            <tr>
-                <td align="center">
-                    <font face="Arial" color="white" size="7"><b>🛒 Thomas Store</b></font><br>
-                    <font face="Arial" color="#BBDEFB" size="4">Tu aliado en productos y servicios tecnológicos</font>
-                </td>
-            </tr>
-        </table>
-    </header>
+<body class="bg-light text-dark">
 
-    <main>
-        <section>
-            <table width="100%" cellpadding="25" cellspacing="0" bgcolor="#E3F2FD">
-                <tr>
-                    <td align="center">
-                        <font face="Arial" color="#01579B" size="6"><b>Bienvenido a Thomas Store ✨</b></font>
-                        <hr width="60%" color="#0288D1" size="3">
-                        <p>
-                            <font face="Arial" size="4" color="#333">
-                                Aquí encontrarás <b>celulares de última generación</b>,  
-                                <b>accesorios exclusivos</b> y  
-                                <b>servicios confiables</b><br><br> como soporte técnico y delivery rápido.  
-                                <br><br>
-                                ¡Todo en un solo lugar para ti! 🚀
-                            </font>
-                        </p>
-                    </td>
-                </tr>
-            </table>
-        </section>
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary py-3">
+    <div class="container">
+      <a class="navbar-brand fs-2 fw-bold" href="#">🛒 Thomas Store</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-        <section>
-            <table width="100%" cellpadding="20" cellspacing="20" bgcolor="#E3F2FD" align="center">
-                <tr align="center">
-                    <!-- PRODUCTOS -->
-                    <td bgcolor="#0288D1" width="50%" valign="top">
-                        <a href="page/productos.html" style="text-decoration:none;">
-                            <font face="Arial" color="white" size="5"><b>📦 Productos</b></font>
-                        </a>
-                        <br><br>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link active" href="#">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="page/productos.html">Productos</a></li>
+          <li class="nav-item"><a class="nav-link" href="page/servicios.html">Servicios</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
-                        <table width="92%" bgcolor="#B3E5FC" cellpadding="0" cellspacing="3" border="0" align="center">
-                            <tr>
-                                <td>
-                                    <table width="100%" bgcolor="white" cellpadding="0" cellspacing="0" border="2" bordercolor="#0288D1" align="center">
-                                        <tr>
-                                            <td align="center" height="120">
-                                                <font face="Arial" color="#333" size="3">
-                                                ✨ Descubre celulares de última generación, accesorios exclusivos  
-                                                y artículos tecnológicos innovadores que se adaptan a tu estilo.
-                                                </font>
-                                            </td>
-                                        </tr>
-                                    </table>
-                                </td>
-                            </tr>
-                        </table>
-                    </td>
+  <!-- HEADER -->
+  <header class="text-center py-5 bg-info-subtle">
+    <div class="container">
+      <h1 class="fw-bold text-primary display-5">Bienvenido a Thomas Store ✨</h1>
+      <p class="lead text-secondary mb-4">Tu aliado en productos y servicios tecnológicos</p>
+      <hr class="w-50 mx-auto border-primary border-3 opacity-75">
+      <p class="fs-5">
+        Aquí encontrarás <strong>celulares de última generación</strong>, <strong>accesorios exclusivos</strong> y
+        <strong>servicios confiables</strong> como soporte técnico y delivery rápido.  
+        <br> ¡Todo en un solo lugar para ti! 🚀
+      </p>
+    </div>
+  </header>
 
-                    <!-- SERVICIOS -->
-                    <td bgcolor="#0288D1" width="50%" valign="top">
-                        <a href="page/servicios.html" style="text-decoration:none;">
-                            <font face="Arial" color="white" size="5"><b>⚙️ Servicios</b></font>
-                        </a>
-                        <br><br>
+  <!-- MAIN -->
+  <main class="container my-5">
+    <div class="row g-4">
+      <!-- Productos -->
+      <div class="col-md-6">
+        <div class="card shadow h-100 border-0">
+          <div class="card-header bg-primary text-white text-center fs-4">
+            📦 <a href="page/productos.html" class="text-white text-decoration-none">Productos</a>
+          </div>
+          <div class="card-body text-center">
+            ✨ Descubre celulares de última generación, accesorios exclusivos y artículos tecnológicos innovadores que se adaptan a tu estilo.
+          </div>
+        </div>
+      </div>
 
-                        <table width="92%" bgcolor="#B3E5FC" cellpadding="0" cellspacing="3" border="0" align="center">
-                            <tr>
-                                <td>
-                                    <table width="100%" bgcolor="white" cellpadding="0" cellspacing="0" border="2" bordercolor="#0288D1" align="center">
-                                        <tr>
-                                            <td align="center" height="120">
-                                                <font face="Arial" color="#333" size="3">
-                                                🚀 Ofrecemos soporte técnico especializado y delivery rápido  
-                                                para que disfrutes de tus productos sin preocupaciones.
-                                                </font>
-                                            </td>
-                                        </tr>
-                                    </table>
-                                </td>
-                            </tr>
-                        </table>
-                    </td>
-                </tr>
-            </table>
-        </section>
-    </main>
+      <!-- Servicios -->
+      <div class="col-md-6">
+        <div class="card shadow h-100 border-0">
+          <div class="card-header bg-primary text-white text-center fs-4">
+            ⚙️ <a href="page/servicios.html" class="text-white text-decoration-none">Servicios</a>
+          </div>
+          <div class="card-body text-center">
+            🚀 Ofrecemos soporte técnico especializado y delivery rápido para que disfrutes de tus productos sin preocupaciones.
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
 
-    <footer>
-        <table width="100%" bgcolor="#0277BD" cellpadding="20" cellspacing="0">
-            <tr valign="top">
-                <!-- Contacto -->
-                <td width="33%">
-                    <font face="Arial" color="white" size="4"><b>📞 Contacto</b></font><br><br>
-                    <font face="Arial" color="#E1F5FE" size="2">
-                        🏠 Lima, Perú<br><br>
-                        📱 +51 987 654 321<br><br>
-                        ✉️ <a href="mailto:thomas.store@gmail.com" style="color:#E1F5FE; text-decoration:none;">thomas.store@gmail.com</a>
-                    </font>
-                </td>
+  <!-- FOOTER -->
+  <footer class="text-white mt-5">
+    <div class="container py-4">
+      <div class="row gy-4">
+        <div class="col-md-4">
+          <h5>📞 Contacto</h5>
+          <address class="small mb-0">
+            🏠 Lima, Perú<br>
+            📱 +51 987 654 321<br>
+            ✉️ <a href="mailto:thomas.store@gmail.com" class="text-white text-decoration-none">thomas.store@gmail.com</a>
+          </address>
+        </div>
 
-                <!-- Redes sociales -->
-                <td width="33%">
-                    <font face="Arial" color="white" size="4"><b>🌐 Redes Sociales</b></font><br><br>
+        <div class="col-md-4">
+          <h5>🌐 Redes Sociales</h5>
+          <ul class="list-unstyled small">
+            <li><a href="https://wa.me/51987654321"><i class="bi bi-whatsapp"></i> WhatsApp</a></li>
+            <li><a href="https://www.facebook.com/"><i class="bi bi-facebook"></i> Facebook</a></li>
+            <li><a href="https://www.instagram.com/"><i class="bi bi-instagram"></i> Instagram</a></li>
+            <li><a href="https://www.youtube.com/"><i class="bi bi-youtube"></i> YouTube</a></li>
+          </ul>
+        </div>
 
-                    <font face="Arial" color="#E1F5FE" size="2">
-                        <a href="https://wa.me/51987654321" style="color:#E1F5FE; text-decoration:none;">
-                            <img src="dist/imagenes/iconos/wsp.png" alt="Whatsapp" width="25" height="25" align="middle"> WhatsApp
-                        </a><br><br>
+        <div class="col-md-4">
+          <h5>✉️ Suscríbete</h5>
+          <form>
+            <input type="email" id="email" class="form-control mb-2" placeholder="Tu correo electrónico" required>
+            <button class="btn btn-light w-100" type="submit">Suscribirme</button>
+          </form>
+        </div>
+      </div>
+    </div>
 
-                        <a href="https://www.facebook.com/" style="color:#E1F5FE; text-decoration:none;">
-                            <img src="dist/imagenes/iconos/fb.png" alt="Facebook" width="25" height="25" align="middle"> Facebook
-                        </a><br><br>
+    <div class="bg-dark text-center py-2 small">
+      © 2025 <b>Thomas Store</b> | Privacidad | Términos y Condiciones
+    </div>
+  </footer>
 
-                        <a href="https://www.instagram.com/" style="color:#E1F5FE; text-decoration:none;">
-                            <img src="dist/imagenes/iconos/ig.png" alt="Instagram" width="25" height="25" align="middle"> Instagram
-                        </a><br><br>
-
-                        <a href="https://www.youtube.com/" style="color:#E1F5FE; text-decoration:none;">
-                            <img src="dist/imagenes/iconos/ytb.png" alt="YouTube" width="25" height="25" align="middle"> YouTube
-                        </a>
-                    </font>
-                </td>
-
-                <!-- Suscripción -->
-                <td width="33%">
-                    <section>
-                        <font face="Arial" color="white" size="4"><b>✉️ Suscríbete</b></font><br><br>
-                        <form>
-                            <input type="email" name="correo" placeholder="Tu correo electrónico"><br><br>
-                            <input type="submit" value="Suscribirme">
-                        </form>
-                    </section>
-                </td>
-            </tr>
-        </table>
-
-        <!-- Derechos reservados -->
-        <table width="100%" bgcolor="#01579B" cellpadding="10" cellspacing="0">
-            <tr>
-                <td align="center">
-                    <font face="Arial" color="white" size="2">
-                        © 2025 <b>Thomas Store</b> | Privacidad | Términos y Condiciones
-                    </font>
-                </td>
-            </tr>
-        </table>
-    </footer>
-
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
+
+
