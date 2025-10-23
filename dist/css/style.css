@@ -1,17 +1,14 @@
-/* 🎨 Paleta de colores */
 :root {
   --azul-primario: #0277bd;
   --azul-oscuro: #01579b;
   --celeste: #03a9f4;
 }
 
-/* 🌐 Transiciones y scroll suave */
 body {
   transition: background-color 0.4s ease, color 0.4s ease;
   scroll-behavior: smooth;
 }
 
-/* 🧩 Tarjetas (Productos / Servicios) */
 .card {
   background: transparent;
   border: none;
@@ -25,7 +22,6 @@ body {
   box-shadow: 0 8px 18px rgba(2, 119, 189, 0.25);
 }
 
-/* Enlaces dentro de las tarjetas */
 .card a {
   color: #ffffff;
   text-decoration: none;
@@ -40,7 +36,6 @@ body {
   opacity: 0.9;
 }
 
-/* 🏷️ Encabezado */
 header h1 {
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.15);
 }
@@ -49,7 +44,6 @@ header p.lead {
   font-weight: 500;
 }
 
-/* 🔗 Enlaces dentro del header */
 header a {
   color: var(--azul-oscuro);
   text-decoration: none;
@@ -65,7 +59,6 @@ header a:active {
   opacity: 0.9;
 }
 
-/* 🦶 Footer */
 footer {
   background: linear-gradient(180deg, var(--azul-primario), var(--azul-oscuro));
   border-top: 4px solid var(--celeste);
@@ -77,7 +70,6 @@ footer h5 {
   letter-spacing: 0.5px;
 }
 
-/* 🔗 Enlaces del footer */
 footer a {
   color: #e1f5fe;
   transition: color 0.3s ease, opacity 0.3s ease, background-color 0.3s ease;
@@ -99,13 +91,11 @@ footer a:visited {
   text-decoration: none !important;
 }
 
-/* 📞 Sección de contacto */
 footer address {
   line-height: 1.8;
   font-style: normal;
 }
 
-/* 🌐 Redes sociales */
 footer ul li {
   margin-bottom: 0.75rem;
   display: flex;
@@ -120,14 +110,12 @@ footer ul li i {
   justify-content: center;
 }
 
-/* 🧮 Inputs y botones */
 input,
 button {
   border-radius: 0.5rem;
   transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
-/* ✉️ Efecto hover y clic en botones */
 button.btn-light:hover,
 button:hover {
   background-color: #0277bd;
@@ -142,7 +130,6 @@ button:active {
   color: #ffffff;
 }
 
-/* 🌊 Barra de navegación */
 .navbar-nav .nav-link {
   transition: background-color 0.3s ease, opacity 0.3s ease;
   border-radius: 0.3rem;
@@ -155,7 +142,6 @@ button:active {
   opacity: 0.9;
 }
 
-/* 📱 Ajustes responsive */
 @media (max-width: 768px) {
   header h1 {
     font-size: 1.8rem;
@@ -166,7 +152,6 @@ button:active {
   }
 }
 
-/* === Cards de celulares === */
 .product-img {
   height: 220px;
   object-fit: contain;
@@ -181,7 +166,6 @@ button:active {
   font-size: 0.9rem;
 }
 
-/* Mantener el estilo Bootstrap original en botones dentro de tarjetas */
 .card a.btn {
   color: #fff;
   /* color del texto */
@@ -194,7 +178,6 @@ button:active {
   display: inline-block;
 }
 
-/* Hover y focus normales de Bootstrap */
 .card a.btn:hover {
   background-color: var(--bs-primary-hover, #0b5ed7);
 }
@@ -204,7 +187,6 @@ button:active {
   outline: none;
 }
 
-/* 💬 Botón flotante de WhatsApp */
 .whatsapp-float {
   position: fixed;
   bottom: 20px;
@@ -227,7 +209,6 @@ button:active {
   transform: scale(1.1);
 }
 
-/* 🔄 Ajuste responsive para pantallas pequeñas */
 @media (max-width: 576px) {
   .whatsapp-float {
     width: 50px;
