@@ -168,9 +168,7 @@ button:active {
 
 .card a.btn {
   color: #fff;
-  /* color del texto */
   background-color: var(--bs-primary);
-  /* azul de Bootstrap */
   border: none;
   padding: 0.25rem 0.5rem;
   border-radius: 0.375rem;
